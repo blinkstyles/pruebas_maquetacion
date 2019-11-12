@@ -1,11 +1,11 @@
 (function (blink) {
 	'use strict';
 
-	var PruebasMaquetacion = function () {
+	var PruebasMaquetacionStyle = function () {
 		blink.theme.styles.basic.apply(this, arguments);
 	};
 
-	PruebasMaquetacion.prototype = {
+	PruebasMaquetacionStyle.prototype = {
 		bodyClassName: 'content_type_clase_pruebas_maquetacion',
 		ckEditorStyles: {
 			name: 'pruebas_maquetacion',
