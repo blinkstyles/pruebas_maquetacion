@@ -16,7 +16,7 @@
 		init: function () {
 			var parent = blink.theme.styles.basic.prototype;
 			parent.init.call(this);
-			blink.getCourse(idcurso, false, false, idGroup).done(function(data) {
+			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
 			});
 		}
