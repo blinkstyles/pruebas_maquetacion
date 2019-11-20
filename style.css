@@ -1,3 +1,8 @@
 #swipeview-slider>div {
   background-color: #00b29e;
 }  
+
+#actividad .carousel-inner .item-container{
+  background: none;
+  box-shadow: none;
+}
