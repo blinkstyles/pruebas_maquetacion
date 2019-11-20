@@ -15,19 +15,16 @@
 
 		init: function () {
 			var parent = blink.theme.styles.basic.prototype;
-			var title, description, units;
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
-			    recoverData(data);
-			    console.log(title);
+			    showDomElements();
 			});
 			
-			function recoverData(data) {
-			   title = data.title;
-			   description = data.description;
-			   units = data.description;
-			}
+			function showDomElements(data){
+			   var container = $('body #slider #swipeview-slider #swipeview-active .item-container); 
+		           title = $('container .title h3').html(data.title);		    
+			}	
 		}
 	};
 
