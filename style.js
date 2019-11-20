@@ -15,14 +15,18 @@
 
 		init: function () {
 			var parent = blink.theme.styles.basic.prototype;
+			var title, description, units;
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
-			    showDomElements();
+			    recoverData(data);
+			    console.log(title);
 			});
 			
-			function showDomElements() {
-			   console.log('hola');
+			function recoverData(data) {
+			   title = data.title;
+			   description = data.description;
+			   units = data.description;
 			}
 		}
 	};
