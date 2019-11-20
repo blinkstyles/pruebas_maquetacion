@@ -18,7 +18,12 @@
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
+			    showDomElements();
 			});
+			
+			function showDomElements() {
+			   console.log('hola');
+			}
 		}
 	};
 
