@@ -25,22 +25,23 @@
 		            assignContainers();		
 			    showDomElements(data);
 			});
-		},
-	        assignContainers = function () {
-			$('#slider-item-0 #transp0')
-				.html('')
-				.append('<div id="course_title">')
-			        .append('<div id="course_description">')
-			        .append('<div id="course_themes"');
 
-			containers.title = $('#course_title');
-			containers.description = $('#course_description');
-			containers.courses = $('#course_themes');
-		},
-		showDomElements = function (data){
-		        $(containers.title).html(data.title);		    
-		        $(containers.description).html(data.title);		    
-		        $(containers.courses).html(data.title);		    
+	                assignContainers = function () {
+			   $('#slider-item-0 #transp0')
+			     .html('')
+			     .append('<div id="course_title">')
+			     .append('<div id="course_description">')
+			     .append('<div id="course_themes"');
+
+			   containers.title = $('#course_title');
+		    	   containers.description = $('#course_description');
+			   containers.courses = $('#course_themes');
+		        },
+		        showDomElements = function (data){
+		           $(containers.title).html(data.title);		    
+		           $(containers.description).html(data.title);		    
+		           $(containers.courses).html(data.title);		    
+		        },
 		},
 	};
 
