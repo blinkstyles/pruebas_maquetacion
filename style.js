@@ -27,7 +27,7 @@
 			    showDomElements(data);
 			});
 
-	                assignContainers = function () {
+	                function assignContainers() {
 			   $('#slider-item-0 #transp0')
 			     .html('')
 			     .append('<div id="course_title">')
@@ -38,11 +38,12 @@
 		    	   containers.description = $('#course_description');
 			   containers.courses = $('#course_themes');
 		        };
-		        showDomElements = function (data){
+		        
+			function showDomElements (data){
 		           $(containers.title).html(data.title);		    
 		           $(containers.description).html(data.title);		    
 		           $(containers.courses).html(data.title);		    
-		        };
+		        }
 		},
 	};
 
