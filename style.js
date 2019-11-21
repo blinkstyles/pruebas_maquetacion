@@ -37,12 +37,12 @@
 			   containers.title = $('#course_title');
 		    	   containers.description = $('#course_description');
 			   containers.courses = $('#course_themes');
-		        },
+		        };
 		        showDomElements = function (data){
 		           $(containers.title).html(data.title);		    
 		           $(containers.description).html(data.title);		    
 		           $(containers.courses).html(data.title);		    
-		        },
+		        };
 		},
 	};
 
