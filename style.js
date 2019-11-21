@@ -12,7 +12,7 @@
 			styles: []
 		},
 		slidesTitle: {},
-                var containers = {
+                containers = {
 		    title: null,
 		    description : null,
 		    courses:null,
