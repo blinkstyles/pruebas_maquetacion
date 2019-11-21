@@ -18,7 +18,7 @@
 		          title: null,
 		          description : null,
 		          courses:null,
-		        }
+		        };
 
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
