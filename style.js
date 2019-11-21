@@ -23,7 +23,7 @@
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
-		            assignContainers();		
+		            this.assignContainers();		
 			    showDomElements(data);
 			});
 
