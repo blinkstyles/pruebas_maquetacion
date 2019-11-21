@@ -12,13 +12,14 @@
 			styles: []
 		},
 		slidesTitle: {},
-                containers = {
-		    title: null,
-		    description : null,
-		    courses:null,
-		   }    
 		init: function () {
 			var parent = blink.theme.styles.basic.prototype;
+                        var containers = {
+		          title: null,
+		          description : null,
+		          courses:null,
+		        }
+
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
