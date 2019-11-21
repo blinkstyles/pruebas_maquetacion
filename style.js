@@ -12,20 +12,36 @@
 			styles: []
 		},
 		slidesTitle: {},
-
+                var containers = {
+		    title: null,
+		    description : null,
+		    courses:null,
+		   }    
 		init: function () {
 			var parent = blink.theme.styles.basic.prototype;
 			parent.init.call(this);
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
-			    showDomElements();
+		            assignContainers();		
+			    showDomElements(data);
 			});
-			
-			function showDomElements(data){
-			   var container = $('body #slider #swipeview-slider #swipeview-active .item-container); 
-		           title = $('container .title h3').html(data.title);		    
-			}	
-		}
+		},
+	        assignContainers = function () {
+			$('#slider-item-0 #transp0')
+				.html('')
+				.append('<div id="course_title">')
+			        .append('<div id="course_description">')
+			        .append('<div id="course_themes"');
+
+			containers.title = $('#course_title');
+			containers.description = $('#course_description');
+			containers.courses = $('#course_themes');
+		},
+		showDomElements = function (data){
+		        $(containers.title).html(data.title);		    
+		        $(containers.description).html(data.title);		    
+		        $(containers.courses).html(data.title);		    
+		},
 	};
 
 	PruebasMaquetacionStyle.prototype = _.extend({}, new blink.theme.styles.basic(), PruebasMaquetacionStyle.prototype);
