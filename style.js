@@ -26,6 +26,9 @@
 			blink.getCourse(idcurso).done(function(data) {
 			    console.log('Curso JSON', data);
 
+			    //Set description value
+			    data.description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
+
 				PruebasMaquetacionStyle.prototype.assignContainers();
 				PruebasMaquetacionStyle.prototype.showDomElements(data);
 			});
@@ -39,9 +42,20 @@
 	    },
 
 		showDomElements: function  (data){
-			$(containers.title).html(data.title);
-			$(containers.description).html(data.description);
-			$(containers.units).html(data.units);
+			if (data.title.length != 0 ) {
+				$(containers.title).html(data.title);
+			}
+
+			if (data.description.length != 0 ) {
+				$(containers.description).html(data.description);
+			}
+
+			if (data.units.length != 0 ) {
+				var unit_list = $(containers.units).append('<ul>').find('ul');
+				$.each(data.units, function (key, unit) {
+                   $(unit_list).append('<li id="' + unit.id + '">' + unit.title +'</li>');
+				});
+			}
 		},
 	};
 
