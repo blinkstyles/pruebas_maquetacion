@@ -6,3 +6,37 @@
   background: none;
   box-shadow: none;
 }
+
+#actividad #course_units ul li {
+  background: #4dc9bb;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 901px) {
+
+  #actividad #course_units {
+    width: 50%;
+    float: right;
+    max-height: 90%;
+    overflow-y: scroll;
+  }
+
+  #actividad #course_units ul li {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  #actividad #course_units{
+    width: 85%;
+  }
+
+  #actividad #course_units ul li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
