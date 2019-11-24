@@ -35,8 +35,11 @@
 		},
 
 		assignContainers: function () {
-			$('#slider-item-0 #transp0').html('').append('<div id="course_title">').append('<div id="course_description">').append('<div id="course_units">');
-			containers.title = $('#course_title');
+            $('#slider-item-0 #transp0')
+                .html('')
+                .append('<div class="left_column"><div id="course_title"></div><div id="course_description"></div></div>')
+                .append('<div class="right_column"><div id="course_units"></div></div>');
+            containers.title = $('#course_title');
 			containers.description = $('#course_description');
 			containers.units = $('#course_units');
 	    },

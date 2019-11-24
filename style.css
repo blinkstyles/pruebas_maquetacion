@@ -15,12 +15,14 @@
 }
 
 @media only screen and (min-width: 901px) {
+  #actividad .left_column {
+    width : 50%;
+    float: left;
+  }
 
-  #actividad #course_units {
-    width: 50%;
+  #actividad .right_column {
+    width : 50%;
     float: right;
-    max-height: 90%;
-    overflow-y: scroll;
   }
 
   #actividad #course_units ul li {
@@ -31,7 +33,8 @@
 
 @media only screen and (max-width: 900px) {
 
-  #actividad #course_units{
+  #actividad .left-column,
+  #actividad .right_column{
     width: 85%;
   }
 
