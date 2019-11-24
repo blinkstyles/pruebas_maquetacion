@@ -12,11 +12,11 @@
   color: #fff;
   font-weight: 700;
   padding: 10px 20px;
+  margin-bottom: 8px;
 }
 
 #actividad #course_title,
 #actividad #course_description{
-  text-align: right;
   color: #fff;
   font-weight: bold;
 }
@@ -50,6 +50,11 @@
     float: right;
   }
 
+  #actividad #course_title,
+  #actividad #course_description {
+    text-align: right;
+  }
+
   #actividad #course_title {
     font-size: 52px;
     line-height: 48px;
@@ -63,7 +68,6 @@
   #actividad #course_units ul li {
     font-size: 22px;
     line-height: 30px;
-    margin-bottom: 8px;
   }
 }
 
@@ -72,6 +76,10 @@
   #actividad .left_column,
   #actividad .right_column{
     width: 85%;
+  }
+
+  #actividad .left_column{
+    margin-bottom: 50px;
   }
 
   #actividad #course_title {
