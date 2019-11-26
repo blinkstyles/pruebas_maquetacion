@@ -56,7 +56,7 @@
 			if (data.units.length != 0 ) {
 				var unit_list = $(containers.units).append('<ul>').find('ul');
 				$.each(data.units, function (key, unit) {
-                   $(unit_list).append('<li id="' + unit.id + '"><span>' + unit.title +'</span></li>');
+                   $(unit_list).append('<li id="' + unit.id + '" class="dropdown"><span>' + unit.title +'</span></li>');
 				});
 			}
 		},
