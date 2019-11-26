@@ -42,7 +42,7 @@
   margin-bottom: 13px;
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1024px) {
 
   #actividad #transp0 {
     display: flex;
@@ -107,7 +107,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1023px) {
 
   #actividad .left_column,
   #actividad .right_column{
