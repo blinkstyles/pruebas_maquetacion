@@ -26,10 +26,6 @@
   margin-bottom: 13px;
 }
 
-#actividad #course_description {
-  padding-left: 100px;
-}
-
 @media only screen and (min-width: 901px) {
 
   #actividad #transp0 {
@@ -63,6 +59,30 @@
   #actividad #course_description {
     font-size: 22px;
     line-height: 26px;
+    padding-left: 100px;
+  }
+
+  #actividad #course_units {
+    float: left;
+    height: 10vh;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 50%;
+    overflow-y: scroll;
+  }
+
+  #actividad #course_units::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  #actividad #course_units::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+
+  #actividad #course_units::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 
   #actividad #course_units ul li {
