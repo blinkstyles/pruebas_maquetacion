@@ -63,17 +63,17 @@
   }
 
   #actividad #course_units {
-    float: left;
-    height: 10vh;
+    height: 70vh;
     margin-bottom: 25px;
     margin-left: 22px;
     margin-top: 40px;
-    width: 50%;
+    width: 100%;
     overflow-y: scroll;
+    padding-right: 5px;
   }
 
   #actividad #course_units::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
     background-color: transparent;
   }
 
