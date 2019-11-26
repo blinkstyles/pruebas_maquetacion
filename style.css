@@ -13,6 +13,7 @@
   font-weight: 700;
   padding: 10px 20px;
   margin-bottom: 8px;
+  min-height: 80px;
 }
 
 #actividad #course_units ul li:after {
