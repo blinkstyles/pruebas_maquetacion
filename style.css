@@ -14,16 +14,20 @@
   padding: 10px 20px;
   margin-bottom: 8px;
   min-height: 80px;
-  padding-rignt:50px;
+  padding-right:50px;
 }
 
-#actividad #course_units ul li.dropdown {
-  background: url('./images/sprite_icons.png');
+#actividad #course_units ul li.dropdown:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(sprite_icons.png);
   background-position: 0 0;
-}
-
-#actividad #course_units ul li.dropdown.expanded {
-  background-position: 31px 0;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translate(-50%,-50%);
 }
 
 #actividad #course_title,
