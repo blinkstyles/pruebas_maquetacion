@@ -15,6 +15,7 @@
   min-height: 80px;
   display: flex;
   align-items: center;
+  padding: 10px 70px 10px 20px;
 }
 
 #actividad #course_units ul li.dropdown:after {
@@ -103,8 +104,6 @@
   #actividad #course_units ul li {
     font-size: 20px;
     line-height: 24px;
-    padding: 10px 70px 10px 20px;
-
   }
 }
 
