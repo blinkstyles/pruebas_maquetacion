@@ -42,6 +42,36 @@
   margin-bottom: 13px;
 }
 
+@media only screen and (min-width: 1140px) {
+  #actividad .left_column {
+    width: 50%;
+  }
+
+  #actividad .right_column {
+    width: 50%;
+  }
+
+  #actividad #course_title {
+    font-size: 52px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1139px) {
+  #actividad .left_column {
+    width: 45%;
+  }
+
+  #actividad .right_column {
+    width: 45%;
+  }
+
+  #actividad #course_title {
+    font-size: 49px;
+    line-height: 53px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
 
   #actividad #transp0 {
@@ -51,25 +81,18 @@
   }
 
   #actividad .left_column {
-    width : 50%;
     float: left;
     padding-right: 80px;
     height: 70vh;
   }
 
   #actividad .right_column {
-    width : 50%;
     float: right;
   }
 
   #actividad #course_title,
   #actividad #course_description {
     text-align: right;
-  }
-
-  #actividad #course_title {
-    font-size: 52px;
-    line-height: 48px;
   }
 
   #actividad #course_description {
@@ -104,21 +127,6 @@
   #actividad #course_units ul li {
     font-size: 20px;
     line-height: 24px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1139px) {
-  #actividad .left_column {
-    width: 45%;
-  }
-
-  #actividad .right_column {
-    width: 45%;
-  }
-
-  #actividad #course_title {
-    font-size: 49px;
-    line-height: 53px;
   }
 }
 
