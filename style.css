@@ -22,7 +22,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  background: url(sprite_icons.png);
+  background: url('./images/sprite_icons.png');
   background-position: 0 0;
   position: absolute;
   top: 50%;
