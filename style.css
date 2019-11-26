@@ -42,6 +42,21 @@
   margin-bottom: 13px;
 }
 
+@media only screen and (min-width: 1040px) {
+  #actividad .left_column {
+    width: 50%;
+  }
+
+  #actividad .right_column {
+    width: 50%;
+  }
+
+  #actividad #course_title {
+    font-size: 52px;
+    line-height: 48px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
 
   #actividad #transp0 {
@@ -51,14 +66,14 @@
   }
 
   #actividad .left_column {
-    width : 50%;
+    width : 45%;
     float: left;
     padding-right: 80px;
     height: 70vh;
   }
 
   #actividad .right_column {
-    width : 50%;
+    width : 45%;
     float: right;
   }
 
@@ -68,8 +83,8 @@
   }
 
   #actividad #course_title {
-    font-size: 52px;
-    line-height: 48px;
+    font-size: 49px;
+    line-height: 53px;
   }
 
   #actividad #course_description {
